@@ -1,0 +1,12 @@
+# .gitignore
+.env
+
+# dependency
+.venv
+
+# eidtor
+.obsidian
+
+# raw data
+DATA
+ARTICLE
