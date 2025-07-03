@@ -1,7 +1,9 @@
-INSERT INTO animal_hospital_registry 
-(number, 
-service_name_open, 
-service_id_open, 
-open_gov_code, 
-mgmt_num, 
-licensg_de, status_code, status_name, detail_status_code, detail_status_name, site_area, jibun_address, road_address, road_zip_code, bizplc_name, last_change_de, data_update_type, data_update_de, x, y, livestock_division, right_holder_serial, total_personnel) VALUES (3, '동물병원', '02_03_01_P', 4671000, 467100001020250001, '2025-06-27', 1, '영업/정상', '0000', '정상', 157, '전북특별자치도 군산시 내흥동 1039-4', '전북특별자치도 군산시 역전로 29, 202호 (내흥동)', '54042', '봄봄동물병원', '2025-06-27 15:39:51', 'I', '2025-06-29 00:20:02', 177850.748041476, 277556.752985676, '동물병원', '000', 0);
+SELECT 
+    COLUMN_NAME AS field_name,
+    COLUMN_TYPE AS type,
+    IS_NULLABLE,
+    COLUMN_DEFAULT,
+    COLUMN_COMMENT AS description
+FROM INFORMATION_SCHEMA.COLUMNS
+WHERE TABLE_SCHEMA = 'eda' AND TABLE_NAME = 'seoul_noise_vibration_complaint'
+ORDER BY ORDINAL_POSITION;

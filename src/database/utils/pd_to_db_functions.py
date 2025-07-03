@@ -1,9 +1,12 @@
 import pandas as pd
-from utils.db_functions import get_connection, execute_sql
+from utils.db_functions import get_connection, execute_sql, execute_sql_list
 
 
 def pd_to_db(host, user, password, database, table_name:str, raw_file_path:str = "./DATA/서울시 동물병원 인허가 정보.csv", ):
-    df = pd.read_csv(raw_file_path, encoding='cp949')
+    try:
+        df = pd.read_csv(raw_file_path, encoding='cp949')
+    except UnicodeDecodeError:
+        df = pd.read_csv(raw_file_path, encoding='utf-8')
 
     print(df)
 
@@ -28,12 +31,14 @@ ORDER BY ORDINAL_POSITION;
 # 한글 컬럼 → 영문 필드명 매핑
     desc_to_field = {desc: field for field, _, _, _, desc in schema}
     rename_dict = {col: desc_to_field[col.strip()] for col in df.columns if col.strip() in desc_to_field}
+    # print(f'rename_dict : {rename_dict}')
     df.rename(columns=rename_dict, inplace=True)
 
     insert_statements = []
 
     for _, row in df.iterrows():
         non_null_fields = row.dropna()
+        # print(f"non_null_fields : {non_null_fields}")
         columns_part = ', '.join(non_null_fields.index)
         values_part = ', '.join(
         f"'{str(v).replace('\'', '\'\'')}'" if isinstance(v, str) else str(int(v)) if isinstance(v, float) and v.is_integer() else str(v)
@@ -46,8 +51,9 @@ ORDER BY ORDINAL_POSITION;
     for stmt in insert_statements[:3]:
         print(stmt)
 
-    for stmt in insert_statements:
-        execute_sql(cursor, stmt)
+    # for stmt in insert_statements:
+    #     execute_sql(cursor, stmt)
+    execute_sql_list(cursor, insert_statements)
 
     db_connection.commit()
     return db_connection,cursor
