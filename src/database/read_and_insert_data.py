@@ -21,8 +21,11 @@ database = os.getenv("DB_NAME")
 # table = 'companion_animal_registration'
 # raw_file_path = 'DATA/Number of registered companion animals by administrative district_20221231.csv'
 
-table = 'animal_hospital_registry'
-raw_file_path = 'DATA/행정안전부_동물병원_20240302.csv'
+# table = 'animal_hospital_registry'
+# raw_file_path = 'DATA/행정안전부_동물병원_20240302.csv'
+
+table = 'per_capita_park_area'
+raw_file_path = 'DATA/1인당_공원면적_2023.csv'
 
 
 print(f"DB 접속 정보: {host=} {user=} {password=} {database=}")

@@ -1,6 +1,6 @@
-
-from typing import Any, Dict, List
+from typing import Any, Dict, List, Union
 import mysql.connector
+from mysql.connector.cursor import MySQLCursor
 import pandas
 import pydoc
 # config.py 또는 main.py 등에서
@@ -81,6 +81,39 @@ def execute_sql(cursor: mysql.connector.connection.MySQLConnectionAbstract.curso
         print(row)
 
     return result
+
+def execute_sql_list(
+    cursor: MySQLCursor,
+    sql: Union[str, List[str]]
+) -> Union[List[tuple], None]:
+    """
+    Execute single or multiple SQL statements and print results if applicable.
+
+    Args:
+        cursor (MySQLCursor): Cursor from a MySQL connection
+        sql (str or List[str]): A single SQL statement or a list of statements
+
+    Returns:
+        List[tuple] if SELECT query, otherwise None
+    """
+    # 여러 개의 SQL문을 리스트로 처리
+    if isinstance(sql, list):
+        for query in sql:
+            cursor.execute(query)
+            if query.strip().lower().startswith("select"):
+                result = cursor.fetchall()
+                for row in result:
+                    print(row)
+        return None
+    else:
+        cursor.execute(sql)
+        if sql.strip().lower().startswith("select"):
+            result = cursor.fetchall()
+            for row in result:
+                print(row)
+            return result
+        return None
+
 
 
 def close_conn_and_cursor(connection: mysql.connector.connection.MySQLConnectionAbstract, cursor: mysql.connector.connection.MySQLConnectionAbstract.cursor) -> None:
