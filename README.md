@@ -25,7 +25,7 @@
 |---|---|
 | 개발환경 | ![Image](https://github.com/user-attachments/assets/c7236917-4ac1-46d9-8c6c-c59eeb206792)|
 | 언어 / 분석환경 |   |
-| 시각화 |  |
+| 데이터 분석 및 시각화 | ![Image](https://github.com/user-attachments/assets/1518547b-9794-4afb-827f-ca6f11d1083b) |
 | 데이터 수집 |  |
 | 데이터베이스|   |
 | 형상관리 / 협업도구|   |
