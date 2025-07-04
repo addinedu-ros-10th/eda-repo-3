@@ -31,17 +31,17 @@ engine = create_engine(f"mysql+pymysql://{user}:{password}@{host}:3306/{database
   
 query = """
 SELECT *
-FROM animal_pharmacy_registry
-WHERE (status_name LIKE '영업/정상') AND (jibun_address LIKE '서울특별시%%')
+FROM animal_beauty_business
+WHERE (status_name LIKE '영업/정상') AND (address_jibun LIKE '서울특별시%%')
 """
 df = pd.read_sql(query, engine)
 
 # 구 이름 추출 방법 1: 문자열 분할
-df['district'] = df['jibun_address'].str.split(' ').str[2]
+df['district'] = df['address_jibun'].str.split(' ').str[2]
 
 # 구 이름 추출 방법 2: 정규표현식 사용
 import re
-df['district'] = df['jibun_address'].str.extract(r'서울특별시 ([가-힣]+구)')
+df['district'] = df['address_jibun'].str.extract(r'서울특별시 ([가-힣]+구)')
 
 # 구별 개수 집계
 district_counts = df['district'].value_counts().reset_index()
@@ -59,7 +59,7 @@ plt.grid(True, linestyle='--', alpha=0.6)
 # plt.tight_layout()
 # plt.show()
 
-save_dir = os.path.expanduser('~/RESULT/visualization')
+save_dir = os.path.expanduser('~/eda-repo-3/RESULT/visualization')
 if not os.path.exists(save_dir):
     os.makedirs(save_dir)
 
