@@ -40,7 +40,7 @@ df_register.columns = ['시군구','총등록_누계']
 
 # ▶️ 유기동물 마리수 가져오기 =======================================
 query = """
-SELECT *tyytu6555555555555555y
+SELECT *
 FROM seoul_abandonment_statistics
 ORDER BY district_name
 """
@@ -96,7 +96,7 @@ ax1.legend(lines, labels, loc='upper right')
 
 
 # ▶️ 이미지 저장 경로 지정
-output_path = 'RESULT/visualization/반려동물등록수_AND_유기동물수_꺾은선그래프.png'
+output_path = 'RESULT/visualization/Sum_반려동물등록수_AND_유기동물수_꺾은선그래프.png'
 # os.makedirs(os.path.dirname(output_path), exist_ok=True)  # 폴더가 없으면 생성
 plt.savefig(output_path, dpi=300, bbox_inches='tight')  # 고해상도 저장
 
