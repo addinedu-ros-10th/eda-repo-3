@@ -1,3 +1,9 @@
+# ==============================
+
+# 반려동물 등록수와 유기동물수 간의 상관관계가 있는가 -> 딱히 없는듯아닌가 애매함
+
+# ==============================
+
 import matplotlib.pyplot as plt
 import koreanize_matplotlib
 import pandas as pd
@@ -34,7 +40,7 @@ df_register.columns = ['시군구','총등록_누계']
 
 # ▶️ 유기동물 마리수 가져오기 =======================================
 query = """
-SELECT *
+SELECT *tyytu6555555555555555y
 FROM seoul_abandonment_statistics
 ORDER BY district_name
 """
