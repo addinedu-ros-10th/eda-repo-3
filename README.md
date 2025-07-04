@@ -28,7 +28,7 @@
 | 데이터 분석 및 시각화 | ![Image](https://github.com/user-attachments/assets/1518547b-9794-4afb-827f-ca6f11d1083b) |
 | 데이터 수집 | ![Image](https://github.com/user-attachments/assets/18047823-1dba-4b9d-b4f5-2eedf0570d62) |
 | 데이터베이스|  ![Image](https://github.com/user-attachments/assets/00740580-cd9a-4980-b9e2-72c118ca7ceb) |
-| 형상관리 / 협업도구|   |
+| 형상관리 / 협업도구| ![Image](https://github.com/user-attachments/assets/46320592-ae8b-48f5-b389-d4be3332d9a4)  |
 
 ## 데이터 검증 시나리오 
 ### 1. 1인당 도시공원 면적, 반려동물 관련 서비스업 수, 동물병원 수가 많은 곳이 반려견과 살 수 있는 최적의 환경일까?
