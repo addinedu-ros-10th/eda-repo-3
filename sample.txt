@@ -5,7 +5,12 @@ SELECT
     COLUMN_DEFAULT,
     COLUMN_COMMENT AS description
 FROM INFORMATION_SCHEMA.COLUMNS
+<<<<<<< HEAD
 WHERE TABLE_SCHEMA = 'eda' AND TABLE_NAME = 'seoul_noise_vibration_complaint'
 ORDER BY ORDINAL_POSITION;
 
 아아
+=======
+WHERE TABLE_SCHEMA = 'eda' AND TABLE_NAME = 'seoul_animal_hospital'
+ORDER BY ORDINAL_POSITION;
+>>>>>>> f68569ccb602ddfbefcfd65fb4735b45067a2bf5
