@@ -35,7 +35,7 @@ SELECT
     traffic_noise_vibration_complaint AS '교통 소음·진동',
     life_noise_vibration_complaint AS '생활 소음·진동'
 FROM seoul_noise_vibration_complaint
-WHERE district_level_2 != '합계'
+WHERE district_level_2 != '소계'
 """
 df = pd.read_sql(query, engine)
 
