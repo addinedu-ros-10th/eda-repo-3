@@ -23,7 +23,7 @@ query = """
 SELECT 
 	animal_registration.gu '자치구',
     animal_registration.cnt '반려동물등록수',
-    # park_area.total_area_sqm '1인당 공원면적',
+    park_area.total_area_sqm '1인당 공원면적',
 	animal_beauty.cnt '미용업소 수',
 	animal_facility.cnt '위탁시설 수',
 	animal_hospital.cnt '동물병원 수'
@@ -86,7 +86,7 @@ animal_registration.gu = park_area.gu
 AND animal_registration.gu = animal_beauty.gu
 AND animal_registration.gu = animal_facility.gu
 AND animal_registration.gu = animal_hospital.gu
-ORDER BY 반려동물등록수 DESC
+ORDER BY '1인당 공원면적' DESC
 # LIMIT 10
 """
 
@@ -100,6 +100,7 @@ scaled = scaler.fit_transform(df.drop(columns="자치구"))
 df_scaled = pd.DataFrame(scaled, columns=df.columns[1:])
 df_scaled["자치구"] = df["자치구"]
 df_scaled = df_scaled.set_index("자치구").sort_values("반려동물등록수", ascending=False)
+# df_scaled = df_scaled.set_index("자치구").sort_values("1인당 공원면적", ascending=False)
 
 # ▶️ 시각화: 다중 막대 그래프
 # plt.figure(figsize=(18, 9))
@@ -114,6 +115,7 @@ plt.grid(axis='y')
 
 # ▶️ 이미지 저장 경로 지정
 output_path = 'RESULT/visualization/서울_자치구별_반려동물_관련_지표_비교_(정규화 스케일).png'
+# output_path = 'RESULT/visualization/서울_자치구별_반려동물_관련_지표_비교_(정규화 스케일)_1인당_공원면적.png'
 os.makedirs(os.path.dirname(output_path), exist_ok=True)  # 폴더가 없으면 생성
 plt.savefig(output_path, dpi=300, bbox_inches='tight')  # 고해상도 저장
 
