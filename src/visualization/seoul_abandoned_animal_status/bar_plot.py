@@ -51,8 +51,13 @@ deceased_counts = deceased_counts.sort_values('deceased_count', ascending=False)
 
 # ▶️ 시각화 (자치구별 유기동물 발생 추이)
 plt.figure(figsize=(14, 8))
-plt.bar(abandon_counts['district_level_2'], abandon_counts['abandon_count'])
-plt.title("✅ 자치구별 유기동물 발생 현황 2021", fontsize=16)
+bar = plt.bar(abandon_counts['district_level_2'], abandon_counts['abandon_count'])
+# 숫자 넣는 부분
+for rect in bar:
+    height = rect.get_height()
+    plt.text(rect.get_x() + rect.get_width()/2.0, height, '%.1f' % height, ha='center', va='bottom', size = 12)
+
+plt.title("자치구별 유기동물 발생 현황 2021", fontsize=16)
 plt.xlabel("자치구(서울)")
 plt.ylabel("유기동물 발생 현황")
 plt.grid(True, linestyle='--', alpha=0.6)
@@ -65,10 +70,19 @@ plt.savefig(os.path.join(save_dir, "서울시_자치구별_유기동물_막대�
 
 # ▶️ 시각화 (자치구별 반려동물 안락사 발생 추이)
 plt.figure(figsize=(14, 8))
-plt.bar(deceased_counts['district_level_2'], deceased_counts['deceased_count'])
-plt.title("✅ 자치구별 반려동물 안락사 발생 현황 2021", fontsize=16)
+bar = plt.bar(deceased_counts['district_level_2'], deceased_counts['deceased_count'])
+
+
+# 숫자 넣는 부분
+for rect in bar:
+    height = rect.get_height()
+    plt.text(rect.get_x() + rect.get_width()/2.0, height, '%.1f' % height, ha='center', va='bottom', size = 12)
+
+
+plt.title("자치구별 반려동물 안락사 발생 현황 2021", fontsize=16)
 plt.xlabel("자치구(서울)")
 plt.ylabel("반려동물 안락사 발생 현황")
 plt.grid(True, linestyle='--', alpha=0.6)
 
 plt.savefig(os.path.join(save_dir, "서울시_자치구별_안락사동물_막대그래프.png"))
+# plt.show()
