@@ -5,5 +5,12 @@ SELECT
     COLUMN_DEFAULT,
     COLUMN_COMMENT AS description
 FROM INFORMATION_SCHEMA.COLUMNS
-WHERE TABLE_SCHEMA = 'eda' AND TABLE_NAME = 'seoul_noise_vibration_complaint'
+WHERE TABLE_SCHEMA = 'eda' AND TABLE_NAME = 'seoul_animal_hospital'
 ORDER BY ORDINAL_POSITION;
+
+
+sido as 시도
+sigungu as 시군구
+dog_registered_total as 개등록_누계
+cat_registered_total as 고양이등록_누계
+total_registered as 총등록_누계
