@@ -63,4 +63,11 @@ plt.ylabel('민원 건수')
 plt.xticks(rotation=45)
 plt.legend()
 plt.tight_layout()
+
+
+# ▶️ 이미지 저장 경로 지정
+output_path = 'RESULT/visualization/서울시_자치구별_소음·진동_민원-누적_현황.png'
+os.makedirs(os.path.dirname(output_path), exist_ok=True)  # 폴더가 없으면 생성
+plt.savefig(output_path, dpi=300, bbox_inches='tight')  # 고해상도 저장
+
 plt.show()

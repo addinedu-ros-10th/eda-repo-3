@@ -55,4 +55,10 @@ plt.xlabel("연도")
 plt.grid(True, linestyle='--', alpha=0.6)
 plt.legend(bbox_to_anchor=(1.05, 1), loc="upper left")
 plt.tight_layout()
+
+# ▶️ 이미지 저장 경로 지정
+output_path = 'RESULT/visualization/자치구별_연도별_유기동물_발생_추이_(2016~2020).png'
+os.makedirs(os.path.dirname(output_path), exist_ok=True)  # 폴더가 없으면 생성
+plt.savefig(output_path, dpi=300, bbox_inches='tight')  # 고해상도 저장
+
 plt.show()
