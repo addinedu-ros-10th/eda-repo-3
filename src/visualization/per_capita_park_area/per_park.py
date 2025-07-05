@@ -22,7 +22,7 @@ import json
 
 
 # .env 파일을 찾아 환경 변수로 로드
-load_dotenv("/home/jiming/dev_ws/eda-repo-3/env")
+load_dotenv("/home/seojimin/dev_ws/eda-repo-3/env")
 
 # 환경 변수 가져오기
 host = os.getenv("DB_HOST")
