@@ -22,7 +22,7 @@ import json
 
 
 # .env 파일을 찾아 환경 변수로 로드
-load_dotenv("/home/seojimin/dev_ws/eda-repo-3/env")
+load_dotenv("env")
 
 # 환경 변수 가져오기
 host = os.getenv("DB_HOST")
@@ -33,7 +33,7 @@ database = os.getenv("DB_NAME")
 # ▶️ MySQL 연결
 engine = create_engine(f"mysql+pymysql://{user}:{password}@{host}:3306/{database}")
 
-# ▶️ 유기동물 마리수 가져오기
+# ▶️ 공원 정보 가져오기
 query = """
 SELECT district_category_2, per_capita_park_area_sqm, per_capita_urban_park_area_sqm, per_capita_walkable_park_area_sqm
 FROM per_capita_park_area
@@ -43,7 +43,6 @@ ORDER BY district_category_2;
 df = pd.read_sql(query, engine)
 df.columns =['자치구', '1인당 공원 면적', '1인당 도시공원 면적', '1인당 도보생활권공원 면적']
 
-print(df)
 
 # =============================
 # 시각화1 _ 1인당 공원 면적

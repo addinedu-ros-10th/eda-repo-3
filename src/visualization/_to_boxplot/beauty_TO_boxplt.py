@@ -76,8 +76,6 @@ plt.grid(True)
 
 
 
-# 이미지 저장
-
 # ▶️ 이미지 저장 경로 지정
 output_path = 'RESULT/visualization/동물미용업_boxplot.png'
 os.makedirs(os.path.dirname(output_path), exist_ok=True)  # 폴더가 없으면 생성
