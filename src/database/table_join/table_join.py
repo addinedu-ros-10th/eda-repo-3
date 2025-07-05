@@ -456,7 +456,9 @@ def create_integrated_dataframe_and_save_csv():
     # district 열을 첫 번째로 고정 & 알파벳(가나다) 순 정렬
     cols = ['district'] + [c for c in merged_df.columns if c != 'district']
     merged_df = merged_df[cols].sort_values('district').reset_index(drop=True)
-    
+    merged_df = merged_df[merged_df['district'] != '소계']
+
+
     # CSV 파일로 저장
     merged_df.to_csv('~/eda-repo-3/RESULT/csv/seoul_integrated_data.csv', index=False, encoding='utf-8-sig')
     
