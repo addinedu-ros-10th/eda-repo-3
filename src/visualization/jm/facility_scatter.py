@@ -143,4 +143,27 @@ plt.savefig(output_path, dpi=300, bbox_inches='tight')  # 고해상도 저장
 
 plt.show()
 
+df['total_facility'] = df[['hospital_count', 'beauty_count', 'pharmacy_count', 'animal_trust_count']].sum(axis=1)
 
+print(df)
+# 5) total_count vs total_registered 산점도 + 라벨 표시 ==============================
+plt.figure(figsize=(10,8))
+sns.scatterplot(data=df, x='total_facility', y='total_registered')
+
+for i in range(df.shape[0]):
+    plt.text(x=df.loc[i, 'total_facility'] + 0.5,
+             y=df.loc[i, 'total_registered'],
+             s=df.loc[i, 'district'],
+             fontsize=8)
+
+plt.title('총 반려시설 수 vs 반려동물 등록수')
+plt.xlabel('총 반려시설 수')
+plt.ylabel('반려동물 등록수')
+plt.grid(True)
+
+# ▶️ 이미지 저장 경로 지정
+output_path = 'RESULT/visualization/총반려시설수_VS_등록수_scatter.png'
+os.makedirs(os.path.dirname(output_path), exist_ok=True)  # 폴더가 없으면 생성
+plt.savefig(output_path, dpi=300, bbox_inches='tight')  # 고해상도 저장
+
+plt.show()
