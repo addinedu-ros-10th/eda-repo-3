@@ -30,6 +30,7 @@
 | 데이터 수집 | ![Image](https://github.com/user-attachments/assets/18047823-1dba-4b9d-b4f5-2eedf0570d62) |
 | 데이터베이스|  ![Image](https://github.com/user-attachments/assets/00740580-cd9a-4980-b9e2-72c118ca7ceb) |
 | 형상관리 / 협업도구| ![Image](https://github.com/user-attachments/assets/46320592-ae8b-48f5-b389-d4be3332d9a4)  |
+| 프로젝트 관리도구| !  |
 
 ## 데이터 검증 시나리오 
 ### 1. 1인당 도시공원 면적이 넓은 곳에 반려 동물과 사는 가구가 많은가??
