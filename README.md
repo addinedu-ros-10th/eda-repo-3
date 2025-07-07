@@ -17,6 +17,9 @@
 
 
 ## 팀명: 티니핑
+|![Image](https://github.com/user-attachments/assets/d6cd8f0e-448a-410d-8667-040a7e6a9c45)|
+|---|
+
 ## 팀원소개
 | 이름 | 역할 |
 |---|---|
@@ -38,16 +41,15 @@
 | 프로젝트 관리도구|  <img width="99" height="37" alt="Image" src="https://github.com/user-attachments/assets/51b0c6e3-d0f7-4236-a3af-ca66b7fb144f" /> |
 
 ## 데이터 수집경로 
+|<img width="1255" height="652" alt="Image" src="https://github.com/user-attachments/assets/b090e866-0167-4c73-a614-f6be59afe030" />|
 |---|
-|---|
-
 ## 국내 반려동물 현황
+|<img width="838" height="569" alt="Image" src="https://github.com/user-attachments/assets/d92a2564-5f3a-441d-a5e4-529c28b48fbc" />|
 |---|
+### 2025년 기준 반려가수 약 593만
+|<img width="838" height="569" alt="Image" src="https://github.com/user-attachments/assets/a2c54fd6-976e-4d78-8bda-c61cb489d4f4" />|
 |---|
-### 1
-|---|
-|---|
-### 2
+### 2014년부터 점진적으로 반려동물 수가 증가하고 있음을 확인 할 수 있음
 ## 기존 분석 사례
 ## Team 티니핑의 반려동물 행복 거주기 선정
 ## 반려동물 행복 주거지 추천 서비스
