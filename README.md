@@ -1,5 +1,4 @@
-# eda-repo-3
-## EDA 프로젝트 3조 저장소. 반려견과 함께 살 수 있는 최적의 생활환경 찾기
+## EDA 프로젝트 3조
 ## 목차 
 * 프로젝트 소개
 * 팀원소개
@@ -8,7 +7,6 @@
 * 국내 반려동물 현황
 * 기존 분석 사례
 * Team 티니핑의 반려동물 행복 거주기 선정
-* 반려동물 행복 주거지 추천 서비스
 
   
 ## 프로젝트 소개
@@ -43,14 +41,23 @@
 ## 데이터 수집경로 
 |<img width="1255" height="652" alt="Image" src="https://github.com/user-attachments/assets/b090e866-0167-4c73-a614-f6be59afe030" />|
 |---|
-## 국내 반려동물 현황
+## 국내 반려동물 현황-1/2
 |<img width="838" height="569" alt="Image" src="https://github.com/user-attachments/assets/d92a2564-5f3a-441d-a5e4-529c28b48fbc" />|
 |---|
-### 2025년 기준 반려가수 약 593만
+## 국내 반려동물 현황-2/2
 |<img width="838" height="569" alt="Image" src="https://github.com/user-attachments/assets/a2c54fd6-976e-4d78-8bda-c61cb489d4f4" />|
 |---|
-### 2014년부터 점진적으로 반려동물 수가 증가하고 있음을 확인 할 수 있음
+
 ## 기존 분석 사례
+|---|
+|---|
+|---|
+|---|
+|---|
+|---|
+|---|
+|---|
+
 ## Team 티니핑의 반려동물 행복 거주기 선정
-## 반려동물 행복 주거지 추천 서비스
+
 
