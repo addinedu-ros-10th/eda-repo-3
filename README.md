@@ -49,9 +49,9 @@
 |---|
 
 ## 기존 분석 사례
+|<img width="1199" height="642" alt="Image" src="https://github.com/user-attachments/assets/a53204ce-4d10-49f1-a339-7196a2ee4315" />|
 |---|
-|---|
-|---|
+|<img width="1199" height="642" alt="Image" src="https://github.com/user-attachments/assets/a7e12ecf-7d00-4b4c-89dd-df5cd14f8867" />|
 |---|
 |---|
 |---|
@@ -59,5 +59,3 @@
 |---|
 
 ## Team 티니핑의 반려동물 행복 거주기 선정
-
-
