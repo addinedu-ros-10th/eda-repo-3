@@ -1,0 +1,24 @@
+import os
+from dotenv import load_dotenv
+from src.database.utils.db_functions import get_connection_and_cursor
+
+load_dotenv('env')
+host = os.getenv('DB_HOST')
+user = os.getenv('DB_USER')
+password = os.getenv('DB_PASSWORD')
+database = os.getenv('DB_NAME')
+
+conn, cursor = get_connection_and_cursor(host, user, password, database)
+cursor.execute('SHOW TABLES;')
+tables = [row[0] for row in cursor.fetchall()]
+
+for table in tables:
+    print(f'\n--- {table} ---')
+    cursor.execute(f'SHOW FULL COLUMNS FROM {table}')
+    for col in cursor.fetchall():
+        print(col)
+    cursor.execute(f"SELECT TABLE_COMMENT FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='{database}' AND TABLE_NAME='{table}'")
+    print('Table comment:', cursor.fetchone()[0])
+
+cursor.close()
+conn.close()
