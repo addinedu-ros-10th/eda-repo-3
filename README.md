@@ -15,8 +15,6 @@
 반려견과 함께 살 수 있는 최적의 생활환경은 무엇일까??
 
 ## 팀명: 티니핑
-|  |
-|---|
 ## 팀원소개
 | 이름 | 역할 |
 |---|---|
@@ -35,11 +33,11 @@
 | 데이터 수집 | ![Image](https://github.com/user-attachments/assets/18047823-1dba-4b9d-b4f5-2eedf0570d62) |
 | 데이터베이스|  ![Image](https://github.com/user-attachments/assets/00740580-cd9a-4980-b9e2-72c118ca7ceb) |
 | 형상관리 / 협업도구| ![Image](https://github.com/user-attachments/assets/46320592-ae8b-48f5-b389-d4be3332d9a4)  |
+| 프로젝트 관리도구|   |
 
 ## 데이터 수집경로 
-### 1. 1인당 도시공원 면적이 넓은 곳에 반려 동물과 사는 가구가 많은가??
-|---|---|
-|---|---|
+|---|
+|---|
 
 ## 국내 반려동물 현황
 ## 기존 분석 사례
