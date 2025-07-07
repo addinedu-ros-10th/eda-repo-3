@@ -53,9 +53,9 @@
 |---|
 |<img width="1199" height="642" alt="Image" src="https://github.com/user-attachments/assets/a7e12ecf-7d00-4b4c-89dd-df5cd14f8867" />|
 |---|
+|<img width="1230" height="676" alt="Image" src="https://github.com/user-attachments/assets/031125e7-dc87-467b-99aa-36c0d74a9788" />|
 |---|
-|---|
-|---|
+|<img width="1230" height="676" alt="Image" src="https://github.com/user-attachments/assets/2e0e4c1a-9d24-4901-8b42-e769b0dc4f0f" />|
 |---|
 
 ## Team 티니핑의 반려동물 행복 거주기 선정
