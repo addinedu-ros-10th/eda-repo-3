@@ -36,25 +36,19 @@
 | 데이터베이스|  ![Image](https://github.com/user-attachments/assets/00740580-cd9a-4980-b9e2-72c118ca7ceb) |
 | 형상관리 / 협업도구| ![Image](https://github.com/user-attachments/assets/46320592-ae8b-48f5-b389-d4be3332d9a4)  |
 | 프로젝트 관리도구|  <img width="99" height="37" alt="Image" src="https://github.com/user-attachments/assets/51b0c6e3-d0f7-4236-a3af-ca66b7fb144f" /> |
+## 지라 칸반
+|---|
+|---|
+
 
 ## 데이터 수집경로 
 |<img width="1255" height="652" alt="Image" src="https://github.com/user-attachments/assets/b090e866-0167-4c73-a614-f6be59afe030" />|
-|---|
-## 국내 반려동물 현황-1/2
-|<img width="838" height="569" alt="Image" src="https://github.com/user-attachments/assets/d92a2564-5f3a-441d-a5e4-529c28b48fbc" />|
-|---|
-## 국내 반려동물 현황-2/2
-|<img width="838" height="569" alt="Image" src="https://github.com/user-attachments/assets/a2c54fd6-976e-4d78-8bda-c61cb489d4f4" />|
 |---|
 
 ## 기존 분석 사례
 |<img width="1199" height="642" alt="Image" src="https://github.com/user-attachments/assets/a53204ce-4d10-49f1-a339-7196a2ee4315" />|
 |---|
-|<img width="1199" height="642" alt="Image" src="https://github.com/user-attachments/assets/a7e12ecf-7d00-4b4c-89dd-df5cd14f8867" />|
 |---|
-|<img width="1230" height="676" alt="Image" src="https://github.com/user-attachments/assets/031125e7-dc87-467b-99aa-36c0d74a9788" />|
-|---|
-|<img width="1230" height="676" alt="Image" src="https://github.com/user-attachments/assets/2e0e4c1a-9d24-4901-8b42-e769b0dc4f0f" />|
 |---|
 
 ## 반려동물 행복 주거지 선정
