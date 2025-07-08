@@ -26,7 +26,7 @@
 |<img width="1255" height="652" alt="Image" src="https://github.com/user-attachments/assets/7ea78e63-e8a1-4e04-8fee-751eb720e4c8" />  |
 |---|
 
-## 개발환경
+## 개발환경 1/2
 | 개발환경 | 사용기술 |
 |---|---|
 | 개발환경 | ![Image](https://github.com/user-attachments/assets/c7236917-4ac1-46d9-8c6c-c59eeb206792)|
@@ -36,10 +36,9 @@
 | 데이터베이스|  ![Image](https://github.com/user-attachments/assets/00740580-cd9a-4980-b9e2-72c118ca7ceb) |
 | 형상관리 / 협업도구| ![Image](https://github.com/user-attachments/assets/46320592-ae8b-48f5-b389-d4be3332d9a4)  |
 | 프로젝트 관리도구|  <img width="99" height="37" alt="Image" src="https://github.com/user-attachments/assets/51b0c6e3-d0f7-4236-a3af-ca66b7fb144f" /> |
-## 지라 칸반
+## 개발환경 2/2
+|<img width="1238" height="667" alt="Image" src="https://github.com/user-attachments/assets/618ad936-c8f3-4a33-9b0f-f1633c990439" />|
 |---|
-|---|
-
 
 ## 데이터 수집경로 
 |<img width="1255" height="652" alt="Image" src="https://github.com/user-attachments/assets/b090e866-0167-4c73-a614-f6be59afe030" />|
@@ -47,8 +46,6 @@
 
 ## 기존 분석 사례
 |<img width="1199" height="642" alt="Image" src="https://github.com/user-attachments/assets/a53204ce-4d10-49f1-a339-7196a2ee4315" />|
-|---|
-|---|
 |---|
 
 ## 반려동물 행복 주거지 선정
