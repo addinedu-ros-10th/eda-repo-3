@@ -23,7 +23,7 @@
 | 박재오(팀원)| 데이터 수집 및 분석,시각화,기술문서 생성 |
 
 ## 프로젝트 소개
-|  |
+|<img width="1221" height="656" alt="Image" src="https://github.com/user-attachments/assets/292e7078-7820-4ad1-ae4d-ab7a5abddd06"/>|
 |---|
 
 ## 개발환경 1/2
