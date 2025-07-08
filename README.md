@@ -1,18 +1,12 @@
 ## EDA 프로젝트 3조
 ## 목차 
-* 프로젝트 소개
-* 팀원소개
-* 사용기술
+* Team 티니핑 소개 
+* Project 소개
+* 개발환경
 * 데이터 수집경로
-* 국내 반려동물 현황
 * 기존 분석 사례
-* 반려동물 행복 주거지 선정
+* 반려동물 이상적 주거지 분석
 * 반려동물 행복 주거지 추천 서비스
-
-  
-## 프로젝트 소개
-|<img width="1255" height="652" alt="Image" src="https://github.com/user-attachments/assets/7ea78e63-e8a1-4e04-8fee-751eb720e4c8" />  |
-|---|
 
 
 ## 팀명: 티니핑
@@ -28,7 +22,11 @@
 | 이수(팀원) | 데이터 수집 분석,시각화,기술문서 생성 및 DB 데이터 생성 |
 | 박재오(팀원)| 데이터 수집 및 분석,시각화,기술문서 생성 |
 
-## 사용기술
+## 프로젝트 소개
+|<img width="1255" height="652" alt="Image" src="https://github.com/user-attachments/assets/7ea78e63-e8a1-4e04-8fee-751eb720e4c8" />  |
+|---|
+
+## 개발환경
 | 개발환경 | 사용기술 |
 |---|---|
 | 개발환경 | ![Image](https://github.com/user-attachments/assets/c7236917-4ac1-46d9-8c6c-c59eeb206792)|
