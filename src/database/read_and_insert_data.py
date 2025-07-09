@@ -24,8 +24,8 @@ database = os.getenv("DB_NAME")
 # table = 'animal_hospital_registry'
 # raw_file_path = 'DATA/행정안전부_동물병원_20240302.csv'
 
-table = 'pollution_pm25_concentration_by_station'
-raw_file_path = 'DATA/[도시대기측정망]측정소별 초미세먼지 농도 측정결과(2023년).csv'
+table = 'seoul_income_expenditure_by_dong'
+raw_file_path = 'DATA/서울시 상권분석서비스(소득소비-자치구).csv'
 
 
 print(f"DB 접속 정보: {host=} {user=} {password=} {database=}")
