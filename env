@@ -1,7 +1,0 @@
-# .env (환경 변수 비밀 설정 파일)
-
-# 🔐 DATABASE
-DB_HOST="database-1.cv24g4i2g7ub.ap-northeast-2.rds.amazonaws.com"
-DB_USER="root"
-DB_PASSWORD="AddineDu202510th!#"
-DB_NAME="eda"
