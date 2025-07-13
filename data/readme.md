@@ -83,3 +83,79 @@ right_holder_serial | VARCHAR(255) | 권리주체일련번호
 total_personnel | FLOAT | 총직원수
 unnamed_32 | FLOAT | Unnamed: 32
 created_at | TIMESTAMP  | 데이터 적재일시 | DEFAULT <br/> CURRENT_TIMESTAMP
+
+## animal_beauty_business
+| Variable | Datatype | Info | Note |
+|---|---|---|---|
+id | INT | 데이터ID | AUTO_INCREMENT <br/> PRIMARY KEY
+service_name_open | VARCHAR(100) | 개방서비스명
+service_id_open | VARCHAR(100) | 개방서비스아이디
+open_gov_code | VARCHAR(10) | 개방자치단체코드
+mgmt_num | VARCHAR(50) | 관리번호
+licensg_de | DATE | 인허가일자
+licensg_cncl_de | DATE | 인허가취소일자
+status_code | VARCHAR(10) | 영업상태구분코드
+status_name | VARCHAR(50) | 영업상태명
+detail_status_code | VARCHAR(10) | 상세영업상태코드
+detail_status_name | VARCHAR(50) | 상세영업상태명
+close_de | DATE | 폐업일자
+suspend_start_de | DATE | 휴업시작일자
+suspend_end_de | DATE | 휴업종료일자
+reopen_de | DATE | 재개업일자
+phone_number_location | VARCHAR(20) | 소재지전화
+site_area | FLOAT | 소재지면적
+zip_code | VARCHAR(10) | 소재지우편번호
+address_jibun | TEXT | 소재지전체주소
+road_address | TEXT | 도로명전체주소
+road_zip_code | VARCHAR(10) | 도로명우편번호
+bizplc_name | VARCHAR(200) | 사업장명
+last_change_dt | DATETIME | 최종수정시점
+data_update_type | VARCHAR(20) | 데이터갱신구분
+data_update_de | DATE | 데이터갱신일자
+category_name | VARCHAR(50) | 업태구분명
+x | DECIMAL(15 8) | 좌표정보x(epsg5174)
+y | DECIMAL(15 8) | 좌표정보y(epsg5174)
+work_division | VARCHAR(50) | 업무구분명
+work_detail_division | VARCHAR(50) | 상세업무구분명
+right_holder_serial | VARCHAR(20) | 권리주체일련번호
+total_staff | INT | 총직원수
+created_at | TIMESTAMP | 데이터 적재일시 | DEFAULT <br/> CURRENT_TIMESTAMP 
+
+## animal_pharmacy_registry
+| Variable | Datatype | Info | Note |
+|---|---|---|---|
+id | INT | 데이터ID |AUTO_INCREMENT <br/> PRIMARY KEY |
+service_name_open | VARCHAR(100) | 개방서비스명
+service_id_open | VARCHAR(100) | 개방서비스아이디
+open_gov_code | VARCHAR(10) | 개방자치단체코드
+mgmt_num | VARCHAR(50) | 관리번호
+licensg_de | DATE | 인허가일자
+licensg_cncl_de | DATE | 인허가취소일자
+status_code | VARCHAR(10) | 영업상태구분코드
+status_name | VARCHAR(50) | 영업상태명
+detail_status_code | VARCHAR(10) | 상세영업상태코드
+detail_status_name | VARCHAR(50) | 상세영업상태명
+close_de | DATE | 폐업일자
+suspend_start_de | DATE | 휴업시작일자
+suspend_end_de | DATE | 휴업종료일자
+reopen_de | DATE | 재개업일자
+phone_number_location | VARCHAR(30) | 소재지전화
+site_area | FLOAT | 소재지면적
+zip_code | VARCHAR(10) | 소재지우편번호
+jibun_address | TEXT | 소재지전체주소
+road_address | TEXT | 도로명전체주소
+road_zip_code | VARCHAR(10) | 도로명우편번호
+bizplc_name | VARCHAR(200) | 사업장명
+last_change_de | DATETIME | 최종수정시점
+data_update_type | VARCHAR(10) | 데이터갱신구분
+data_update_de | DATETIME | 데이터갱신일자
+category_name | VARCHAR(100) | 업태구분명
+x | DECIMAL(15, 8) | 좌표정보x(epsg5174)
+y | DECIMAL(15, 8) | 좌표정보y(epsg5174)
+business_type_name | VARCHAR(100) | 업무구분명
+business_type_detail | VARCHAR(100) | 상세업무구분명
+right_holder_serial | VARCHAR(20) | 권리주체일련번호
+total_personnel | INT | 총직원수
+created_at | TIMESTAMP | 데이터 적재일시 | DEFAULT CURRENT_TIMESTAMP
+
+
