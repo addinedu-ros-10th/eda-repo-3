@@ -50,9 +50,13 @@
 * Min-Max Scaling으로 정규화 적용
 * **회귀선 기울기 > 0.5** 인 경우, 강한 경향성으로 판단
 
+<img width="1110" height="450" alt="Image" src="https://github.com/user-attachments/assets/8cee6171-b1f0-4349-8ab1-5348b7bc12d8" />  
 
-<img width="1426" height="579" alt="Image" src="https://github.com/user-attachments/assets/b2573363-c91e-42d4-a238-35ac0206dd45" />  
-<img width="1426" height="579" alt="Image" src="https://github.com/user-attachments/assets/bcf5f45e-f891-470a-aff5-84f1364fd490" />
+
+<img width="1110" height="450" alt="Image" src="https://github.com/user-attachments/assets/41c59ac7-0011-4eb7-99b7-a061419f63f7" />
+
+
+
 <br />
 <br />
 
