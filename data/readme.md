@@ -1,76 +1,682 @@
 # 동물병원 인허가 정보 (서울시)
+
 * 테이블 구조: [seoul_animal_hospital](#seoul_animal_hospital)
+
 <br/>
+
 * 목적:
+
     서울시 공공데이터에서 제공하는 동물병원 인허가 정보를 저장합니다.
     인허가 일자, 폐업/휴업 상태, 병원 위치, 좌표, 업종 구분 등 상세한 행정 데이터를 포함합니다.
+
 <br/>
+
 * 주요 필드:
+
     * licensg_de, status_name, jibun_address, x, y, 등 총 31개 필드
+
     * created_at: 데이터 적재 일시 자동 기록
+
 <br/>
+
 * 활용 예시:
+
     * 반려동물 관련 의료 인프라 분석
+
     * GIS 기반 병원 위치 시각화
+
     * 서울시 각 구역별 동물병원 운영 현황 분석
 
 # 행정구역별 반려동물 등록 현황 (농림축산식품부)
+
 * 테이블 구조: [companion_animal_registration](#companion_animal_registration)
+
 <br/>
+
 * 목적:
+
     행정구역별 반려동물 등록 현황(개/고양이/전체)을 저장합니다.
     등록 수 기준으로 지역별 반려동물 분포를 파악할 수 있도록 구성되어 있습니다.
-    <br/>
+
+<br/>
+
 * 주요 필드:
+
     * sido: 시도명
+
     * sigungu: 시군구명
+
     * dog_registered_total, cat_registered_total, total_registered: 누적 등록 수
-    <br/>
+
+<br/>
+
 * 활용 예시:
+
     * 반려동물 등록률 지도 시각화
+
     * 지역별 반려동물 복지 정책 수립 자료
+
     * 동물병원 분포 대비 수요 분석
 
 # 동물병원 등록 정보 (행정안전부)
+
 * 테이블 구조: [animal_hospital_registry](#animal_hospital_registry)
+
 <br/>
+
 * 목적:
+
     행정안전부에서 제공하는 동물병원 등록 정보를 체계적으로 저장하기 위한 테이블입니다.
     기초 주소 정보, 병원명, 전화번호, 인허가 상태, 업종 정보, 위치 좌표 등 공공 행정데이터를 포함합니다.
+
 <br/>
+
 * 주요 필드:
+
     * licensg_de, status_name, jibun_address, x, y 등 총 33개 필드
+
     * created_at: 데이터 적재 일시 자동 기록
+
 <br/>
+
 * 활용 예시:
+
     * 반려동물 관련 의료 인프라 분석
+
     * GIS 기반 병원 위치 시각화
+
     * 병원 인허가 상태 및 운영 현황 분석
 
 # 동물미용업 인허가 정보 (행정안전부)
+
 * 테이블 구조: [animal_beauty_business](#animal_beauty_business)
+
 <br/>
-목적:
+
+* 목적:
+
     행정안전부가 제공하는 동물미용업 관련 인허가 정보를 저장합니다.
     인허가 상태, 소재지 정보, 좌표 정보, 영업 구분 및 갱신 정보 등 다양한 행정 데이터 포함.
+
 <br/>
+
 * 주요 필드:
+
     * licensg_de, status_name, road_address, x, y 등 총 32개 필드
+
     * created_at: 데이터 적재 일시 자동 기록
+
 <br/>
+
 * 활용 예시:
+
     * 반려동물 산업 현황 분석
+
     * 미용업소 분포 기반 상권 분석
+
     * 미용 관련 민원 및 인허가 대응 분석 등
 
 
+# 동물약국 인허가 정보 (행정안전부)
+
+* 테이블 구조: [animal_pharmacy_registry](#animal_pharmacy_registry)
+
+<br/>
+
+* 목적:
+
+    행정안전부에서 제공하는 동물약국 인허가 정보를 저장합니다.
+    병원 상태, 위치, 전화번호, 주소, 인허가 일자 등 행정 데이터를 정리하여 향후 분석과 활용이 가능하게 합니다.
+
+<br/>
+
+* 주요 필드:
+
+    * licensg_de, status_name, jibun_address, x, y 등 포함 총 32개 필드
+
+    * created_at: 데이터 적재 일시 자동 기록
+
+<br/>
+
+* 활용 예시:
+
+    * 지역별 동물약국 분포 분석
+
+    * 인허가 추이 분석
+
+    * GIS 좌표 기반 시각화
+
+# 동물위탁관리업 인허가 정보 (서울시)
+
+* 테이블 구조: [seoul_animal_trust_facility](#seoul_animal_trust_facility)
+
+<br/>
+
+* 목적:
+    서울시 공공데이터에서 제공하는 동물위탁관리업 인허가 정보를 저장합니다.
+    전화번호, 주소, 사업장명, 영업상태, 좌표, 업무 구분 등 상세한 행정 데이터를 포함합니다.
+
+<br/>
+
+* 주요 필드:
+
+    * licensg_de, status_name, road_address, x, y 등 총 33개 필드
+
+    * created_at: 데이터 적재 일시 자동 기록
+<br/>
+
+* 활용 예시:
+
+    * 위탁 반려동물 관리 인프라 파악
+
+    * 서울시 지역별 동물 위탁시설 분포 분석
+
+    * 위치 기반 서비스(GIS) 활용
+
+# 전국 도시공원 정보 표준 데이터 (행정안전부)
+
+* 테이블 구조: [korea_urban_park_info](#korea_urban_park_info)
+
+<br/>
+
+* 목적:
+
+    전국의 도시공원 정보를 표준화하여 관리하기 위한 테이블입니다. 공원명, 위치, 보유 시설, 면적, 관리기관 등 다양한 정보를 포함하여 지역 인프라 분석 및 정책 수립에 활용됩니다.
+
+<br/>
+
+* 주요 필드:
+
+    * park_name: 공원명
+
+    * latitude, longitude: 공원 위치 좌표
+
+    * park_area: 공원 면적
+
+    * facility_*: 공원 내 보유 시설 정보
+
+    * managing_agency, phone_number: 관리 기관 정보
+
+    * designated_date: 공원 지정일자
+
+    * created_at: 데이터 적재 일시 자동 기록
+
+<br/>
+
+* 활용 예시:
+
+    * 도시 인프라 분포 및 접근성 분석
+
+    * 반려동물 산책 가능한 공간 정보 분석
+
+    * 지역별 공공 편의시설 현황 시각화
 
 
 
+# 서울특별시 유기동물보호 현황 통계 (행정안전부)
+
+* 테이블 구조: [seoul_abandoned_animal_status](#seoul_abandoned_animal_status)
+
+<br/>
+
+* 목적:
+
+    서울시 각 자치구별 유기동물 보호 및 처리 현황 정보를 저장합니다.
+    보호된 유기동물의 종류별 처리 방식(주인 인도, 입양, 폐사 등)을 분석하는 데 사용됩니다.
+
+<br/>
+
+* 주요 필드:
+
+    * district_level_1, district_level_2: 행정 구역
+
+    * total_count: 전체 유기동물 수
+
+    * 각 동물종(개, 고양이, 기타)에 대한 처리 방식별 소계
+
+    * created_at: 데이터 적재 일시 자동 기록
+
+<br/>
+
+* 활용 예시:
+
+    * 자치구별 유기동물 구조 및 처리 건수 통계 분석
+
+    * 반려동물 정책 수립을 위한 기초 데이터 활용
+
+    * 유기동물 보호소 운영 효율화 및 입양 캠페인 기획
+
+# 서울시 소음진동민원 현황 통계 (서울시)
+
+* 테이블 구조: [seoul_noise_vibration_complaint](#seoul_noise_vibration_complaint)
+
+<br/>
+
+* 목적:
+
+    서울시 각 자치구별 소음 및 진동 관련 민원 데이터를 저장합니다. 공장, 교통, 생활 소음 등으로 분류된 데이터를 통해 도시 소음 환경의 문제점을 파악하고 지역별 정책 수립 및 대응 전략 수립에 활용합니다.
+
+<br/>
+
+* 주요 필드:
+
+    * district_level_1, district_level_2: 행정 구역
+
+    * noise_vibration_complaint: 총 소음진동 민원 수
+
+    * factory_noise_vibration_complaint, traffic_noise_vibration_complaint, life_noise_vibration_complaint: 원인별 분류
+
+<br/>
+
+* 활용 예시:
+
+    * 지역별 소음 민원 집중도 분석
+
+    * 소음 유발 요인별 정책 대응
+
+    * GIS 시각화를 통한 소음 민원 분포도 제작
+
+# 환경오염물질 배출시설 통계 (서울시)
+
+* 테이블 구조: [pollution_emission_facility](#pollution_emission_facility)
+
+<br/>
+
+* 목적:
+
+    2024년 기준 지역별 환경오염물질(대기, 수질, 소음·진동) 배출시설의 분포 및 분류 정보를 저장합니다. 대기오염, 폐수, 소음·진동 항목을 각 1~5종으로 세분화하여 관리하며, 지역별 이중 분류 체계를 통해 정온지역 여부를 포함한 환경 영향을 분석할 수 있습니다.
+
+<br/>
+
+* 주요 필드:
+
+    * region_large, region_small
+
+    * air_total, air_type_1~5
+
+    * water_total, water_type_1~5
+
+    * noise_total, noise_silent_area, noise_non_silent_area
+
+<br/>
+
+* 활용 예시:
+
+    * 지역별 환경오염 시설 밀도 분석
+
+    * 정온지역 소음 관리 대상 지역 파악
+
+    * 오염물질 종류 및 등급에 따른 규제 수립
+
+# 서울특별시 자치구별 유기동물 발생 통계 (동물 자유 연대)
+
+* 테이블 구조: [seoul_abandonment_statistics](#seoul_abandonment_statistics)
+
+<br/>
+
+* 목적:
+
+    서울특별시 자치구별 유기동물 발생 건수를 연도별로 기록하여 유기동물 발생 추세를 시계열로 분석할 수 있도록 합니다. 2016년부터 2020년까지의 데이터가 포함되어 있으며, 각 자치구별 유기 발생 현황을 데이터 기반으로 파악할 수 있습니다.
+
+<br/>
+
+* 주요 필드:
+
+    * district_name: 자치구 이름 (예: 강남구, 종로구 등)
+
+    * abandonment_count_2016~2020: 각 연도별 유기동물 발생 건수
+
+    * created_at: 데이터 적재 일시 (자동 기록)
+
+<br/>
+
+* 활용 예시:
+
+    * 서울시 유기동물 발생 추세 시각화 (연도별 증가/감소 비교)
+
+    * 자치구별 유기동물 발생률 비교를 통한 정책 우선순위 설정
+
+    * 동물 보호소 수요 예측 및 자원 배분 기준자료 제공
+
+
+# 서울특별시 자치구별 공원면적 및 도시공원·생활권공원 면적 정보 (서울시)
+
+* 테이블 구조: [per_capita_park_area](#per_capita_park_area)
+<br/>
+
+* 목적:
+
+    서울시 각 자치구별 1인당 공원면적 및 도시공원·생활권공원 관련 면적 정보를 저장합니다.
+    이는 도시 녹지 환경 및 생활 인프라 분석에 활용됩니다.
+
+<br/>
+
+* 주요 필드:
+
+    * district_category_1, district_category_2: 자치구 분류
+
+    * park_area_total_sqm_thousands, per_capita_park_area_sqm: 전체 공원 면적 및 1인당 공원 면적 
+
+    * urban_park_area_sqm_thousands, per_capita_urban_park_area_sqm: 도시공원 관련 정보
+
+    * walkable_park_area_sqm_thousands, per_capita_walkable_park_area_sqm: 도보생활권공원 관련 정보
+
+<br/>
+
+* created_at: 데이터 적재 일시 자동 기록
+
+    * 활용 예시:
+
+    * 자치구별 녹지공간 불균형 분석
+
+    * 환경복지 및 보행권 분석
+
+    * 도시개발 정책 우선순위 판단 근거
+
+
+# 전국 도시대기측정망 2023년 일산화탄소(CO) 농도 측정 결과 (에어 코리아)
+* 테이블 구조 : [pollution_co_concentration_by_station](#pollution_co_concentration_by_station)
+
+<br/>
+
+* 목적:
+
+    전국 도시대기측정망의 2023년 일산화탄소(CO) 농도 측정 결과를 저장합니다.
+    측정소 단위로 월별 농도(ppm) 데이터를 보관하며, 대기질 추이 및 지역별 비교 분석에 활용됩니다.
+
+<br/>
+
+* 주요 필드:
+
+    * province: 시도명
+
+    * city: 시군구
+
+    * station_name: 측정소 이름
+
+    * station_code: 측정소 코드
+
+    * jan ~ dec: 1~12월 월별 일산화탄소 농도(ppm)
+
+    * annual_avg: 연평균 CO 농도
+
+    * created_at: 데이터 적재 일시 자동 기록
+
+<br/>
+
+* 활용 예시:
+
+    * 지역별 공기질 변화 시계열 분석
+
+    * 공원·주거지 인근 대기오염 상관분석
+
+    * 환경 정책 효과 측정
+
+
+# 전국 도시대기측정망 2023년 미세먼지(PM-10) 농도 측정 결과 (에어 코리아)
+* 테이블 구조 : [pollution_co_concentration_by_station](#pollution_co_concentration_by_station)
+
+<br/>
+
+* 목적:
+
+    전국 도시대기측정망의 2023년 미세먼지(PM-10) 농도 측정 결과를 저장합니다.
+    측정소 단위로 월별 농도(ppm) 데이터를 보관하며, 대기질 추이 및 지역별 비교 분석에 활용됩니다.
+
+<br/>
+
+* 주요 필드:
+
+    * province: 시도명
+
+    * city: 시군구
+
+    * station_name: 측정소 이름
+
+    * station_code: 측정소 코드
+
+    * jan ~ dec: 1~12월 월별 미세먼지(PM-10) 농도(ppm)
+
+    * annual_avg: 연평균 미세먼지(PM-10) 농도
+
+    * created_at: 데이터 적재 일시 자동 기록
+
+<br/>
+
+* 활용 예시:
+
+    * 지역별 공기질 변화 시계열 분석
+
+    * 공원·주거지 인근 대기오염 상관분석
+
+    * 환경 정책 효과 측정
+
+
+# 전국 도시대기측정망 2023년 미세먼지(PM-25) 농도 측정 결과 (에어 코리아)
+* 테이블 구조 : [pollution_co_concentration_by_station](#pollution_co_concentration_by_station)
+
+<br/>
+
+* 목적:
+
+    전국 도시대기측정망의 2023년 미세먼지(PM-25) 농도 측정 결과를 저장합니다.
+    측정소 단위로 월별 농도(ppm) 데이터를 보관하며, 대기질 추이 및 지역별 비교 분석에 활용됩니다.
+
+<br/>
+
+* 주요 필드:
+
+    * province: 시도명
+
+    * city: 시군구
+
+    * station_name: 측정소 이름
+
+    * station_code: 측정소 코드
+
+    * jan ~ dec: 1~12월 월별 미세먼지(PM-25) 농도(ppm)
+
+    * annual_avg: 연평균 미세먼지(PM-25) 농도
+
+    * created_at: 데이터 적재 일시 자동 기록
+
+<br/>
+
+* 활용 예시:
+
+    * 지역별 공기질 변화 시계열 분석
+
+    * 공원·주거지 인근 대기오염 상관분석
+
+    * 환경 정책 효과 측정
+
+# 서울시 자치구별 펫세권 관련 업종 데이터
+
+* 테이블 구조 : [pet_friendly_zone_summary](#pet_friendly_zone_summary)
+
+<br/>
+
+* 목적:
+
+    서울시 자치구별 펫세권 관련 업종 데이터를 저장합니다.
+    카페, 음식점, 주점 같은 일반 생활 인프라와 함께 동물병원, 펫미용실, 펫용품점, 펫호텔 등 펫 관련 업종 수치를 포함합니다.
+    이를 통해 지역별 펫 친화 환경을 정량적으로 비교·분석할 수 있는 기반 데이터를 제공합니다.
+
+<br/>
+
+* 주요 필드:
+
+	* district_name: 자치구명
+
+	* total_places: 전체 업종 수 (카페+음식점+주점+펫 관련)
+
+	* cafe: 카페 수
+
+	* restaurant: 음식점 수
+
+	* pub: 주점 수
+
+	* animal_hospital: 동물병원 수
+
+	* pet_beauty_salon: 펫미용실 수
+
+	* pet_store: 펫용품점 수
+
+	* pet_hotel: 펫호텔 수
+
+	* created_at: 데이터 적재 일시 자동 기록
+
+<br/>
+
+* 활용 예시:
+
+	* 펫 관련 상권 분포 시각화 및 분석
+
+	* 지역별 펫 인프라 격차 분석
+
+	* 공원/주거환경/인구 데이터와의 교차 분석을 통한 ‘펫세권’ 평가
+
+	* 행정 정책 수립 및 펫 관련 창업 입지 선정 지원
+
+
+# seoul_pet_welfare_policy 테이블 설명
+
+* 테이블 구조 : [seoul_pet_welfare_policy](#seoul_pet_welfare_policy)
+
+<br/>
+
+* 목적:
+
+    서울시 25개 자치구에서 시행 중인 반려동물 복지 정책을 정리한 정보를 저장합니다.
+    정책 항목별로 각 자치구에서 시행 여부를 Boolean 형식으로 기록합니다.
+
+<br/>
+
+* 주요 필드:
+
+    * district_name: 자치구 이름
+
+    * animal_shelter_in_district: 관내 유기동물 보호소 여부
+
+    * dog_playground_or_shelter: 반려견 놀이터 또는 쉼터 존재 여부
+
+    * pet_behavior_education: 반려동물 행동교육 프로그램 운영 여부
+
+    * stray_cat_feeding_station: 길고양이 급식소 운영 여부
+
+    * low_income_vet_support: 취약계층 대상 동물병원 진료 지원
+
+    * pet_temporary_care: 반려동물 임시위탁제도 운영 여부
+
+    * created_at: 데이터 적재 시각
+
+<br/>
+
+* 활용 예시:
+
+    *  정책 수립 시 지역별 복지 정책 분포 시각화
+
+    *  자치구별 반려동물 친화 정책 분석
+
+    *  반려동물 기반 시민 서비스 개선 연구
+
+ 
+# 전국 반려동물 동반 가능 문화시설 및 반려동물 동반 정보 데이터
+* 테이블 구조 : [pet_friendly_culture_facilities](#pet_friendly_culture_facilities)
+
+<br/>
+
+* 목적:
+    전국의 반려동물 동반 가능 문화시설(약국, 미술관 등)의 위치 및 반려동물 동반 정보 데이터를 저장합니다.
+    시설명, 위치(지번/도로명), 입장 요금, 반려동물 제한사항, 실내외 여부 등 방문 전 필요한 세부 정보를 포함합니다.
+
+<br/>
+
+* 주요 필드:
+
+    * facility_name, sido, sigungu, bunji, can_with_pet, pet_size_allowed, indoors_allowed, outdoors_allowed 등 총 31개 필드
+
+    * created_at: 데이터 적재 일시 자동 기록
+
+<br/>
+
+* 활용 예시:
+
+    * 반려동물 동반 문화생활 인프라 지도 시각화
+
+    * 실내외 및 시설 종류에 따른 반려견 문화 공간 추천
+
+    * 반려인 관광 편의성 지수 산출 등
+
+
+# 전국 동물보호센터 기본 정보
+* 테이블 구조 : [animal_shelter](#animal_shelter)
+
+<br/>
+
+* 목적:
+
+    전국 동물보호센터의 기본 정보를 저장하는 테이블입니다. 관할구역, 명칭, 연락처, 주소 등의 정보를 포함하며, 지역 기반의 보호시설 인프라 분석 등에 활용됩니다.
+
+<br/>
+
+* 주요 필드:
+
+    * jurisdiction, shelter_name, phone_number, address 등 총 5개 주요 필드
+
+    * created_at: 데이터 적재 일시 자동 기록
+
+<br/>
+
+* 활용 예시:
+
+    * GIS 기반 보호센터 분포 시각화
+
+    * 지역별 보호시설 현황 분석
+
+    * 동물복지 인프라 정책 기초 자료
+
+# 서울시 자치구 월평균 소득 및 지출 항목별 금액 정보
+테이블 구조 : [seoul_income_expenditure_by_dong](#seoul_income_expenditure_by_dong)
+
+<br/>
+
+* 목적:
+
+    서울시 자치구 단위의 월평균 소득 및 지출 항목별 금액 정보를 저장합니다.
+    이 데이터는 소득 구간별 소비 패턴 분석 및 지역별 경제 수준 비교에 활용될 수 있습니다.
+
+<br/>
+
+* 주요 필드:
+
+    * income_avg_monthly (월 평균 소득 금액)
+
+    * expense_total (지출 총금액)
+
+    * expense_food, expense_medical, expense_entertainment 등 항목별 지출
+
+    * created_at: 데이터 적재 일시 자동 기록
+
+<br/>
+
+* 활용 예시:
+
+    * 자치구별 소비 성향 비교
+
+    * 소득 대비 소비 비율 분석
+
+    * 상권 타겟팅 및 마케팅 전략 수립
 
 
 
+<br/>
+<br/>
+<br/>
 
+---
+
+# 테이블 구조 목록
 
 
 
