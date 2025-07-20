@@ -50,10 +50,9 @@
 * Min-Max Scaling으로 정규화 적용
 * **회귀선 기울기 > 0.5** 인 경우, 강한 경향성으로 판단
 
-<img width="1110" height="450" alt="Image" src="https://github.com/user-attachments/assets/8cee6171-b1f0-4349-8ab1-5348b7bc12d8" />  
+![데이터사진1](ASSET/image/1.png)
 
-
-<img width="1110" height="450" alt="Image" src="https://github.com/user-attachments/assets/41c59ac7-0011-4eb7-99b7-a061419f63f7" />
+![데이터사진2](ASSET/image/2.png)
 
 
 
@@ -75,9 +74,9 @@
 >  통계청 펫세권 타당성 검토
 * 통계청에서 제시한 펫세권 기반으로 추천한 지역과 반려동물 등록수 비교
 
-<img width="1426" height="579" alt="Screenshot from 2025-07-13 23-21-30" src="https://github.com/user-attachments/assets/dadbf402-0468-4307-9d9e-2a5bb61026d1" />  
+![데이터사진3](ASSET/image/3.png)
 
-<img width="1426" height="579" alt="Screenshot from 2025-07-13 23-25-33" src="https://github.com/user-attachments/assets/2ee6a514-9333-473d-9f81-aa6cab1a3444" />
+![데이터사진4](ASSET/image/4.png)
 
 * 추천 받은 지역의 반려동물 등록수 3만 > 비추천 지역의 반려동물 등록수 2만
 * 통계청에서 펫세권 기반으로 추천한 지역과 반려동물 등록수 간의 연관성 확인  
@@ -85,9 +84,9 @@
 
 > 다방, KB부동산 펫세권 타당성 검토
 
-<img width="1426" height="579" alt="Screenshot from 2025-07-13 23-29-08" src="https://github.com/user-attachments/assets/633a9b68-2f62-44fb-a257-f560c592e7d7" />  
+![데이터사진5](ASSET/image/5.png)
 
-<img width="800" height="500" alt="Screenshot from 2025-07-13 23-30-04" src="https://github.com/user-attachments/assets/ac0e5848-35ac-4027-b620-4bfebcd8390f" />
+![데이터사진6](ASSET/image/6.png)
 
 * '펫 시설수'와 '반려동물 등록수' 연관성 약함
 
@@ -108,20 +107,20 @@
 * 위험
 * 복지
 
-<img width="600" height="600" alt="Screenshot from 2025-07-13 23-45-53" src="https://github.com/user-attachments/assets/332d3056-5c12-4eae-9cea-c875a4655f6c" />
+![데이터사진7](ASSET/image/7.png)
 
 * 긍정 요인 (+) : 건강, 서비스, 녹지
 * 부정 요인 (-) : 위험
 
 > 긍정 요인만 고려한 주거지 순위  
 
-<img width="400" height="400" alt="Screenshot from 2025-07-13 23-52-23" src="https://github.com/user-attachments/assets/8f48d008-af77-4ec4-8185-e9bb13d3d0b2" />
+![데이터사진8](ASSET/image/8.png)
 
 * 각 분야 별 1위 ~ 5위 지역에, 5점 ~ 1점 순 배점
 
 > 부정 요인만 고려한 주거지 순위  
 
-<img width="400" height="400" alt="Screenshot from 2025-07-13 23-56-54" src="https://github.com/user-attachments/assets/0abf1f58-5ed7-4914-821a-e22f4657b28d" />
+![데이터사진9](ASSET/image/9.png)
 
 * 각 분야 별 1위 ~ 5위 지역에, 5점 ~ 1점 순 배점
 
@@ -136,10 +135,116 @@
 
 ## 4️⃣ 테마별 반려동물 주거지 추천 서비스
 
+### 반려동물 주거지 분석 기준 테마 설정
+![테마기준5개](ASSET/image/10.png)
 
-=======
+### 서울시 자치구별 테마 분석 결과 정리 
+
+| 테마명 | 추천 자치구 | 한줄 요약 |
+|---|---|---|
+| 건강 케어 | 강남구, 서초구, 송파구| "풀스택 펫 헬스 인프라 집결지"|
+| 스트레스 프리 | 강북구, 은평구, 서대문구 | "숨쉬기 좋은 녹지 천국" |
+| 활발한 야외 활동 | 종로구 중구, 서초구 | "숲속에서 뛰노는 일상, 녹색 산책 천국" |
+| 문화 · 여가 동행 | 강남구, 마포구, 송파구 | "펫과 함께하는 쇼핑과 산책, 문화가 흐르는 거리" |
+| 입양 · 봉사 관심 | 성동구, 강동구, 서대문구 | "돌봄 커뮤니티 & 구조 네트워크" |
+
+![테마분석결과](ASSET/image/11.png)
+
+#### 1. 테마 분석 : 건강케어
+![데이터사진12](ASSET/image/12.png)
+* 강남구, 서초구, 송파구
+* 반려동물 인프라 집결지
+* 주의 요소 : 외부 공기질 및 소음 관리 필요  
+
+#### 2. 테마 분석 : 스트레스 프리
+![데이터사진13](ASSET/image/13.png)
+* 강북구, 은평구, 서대문구
+* 공원 면적 및 대기질 좋음
+* 주의 요소 : 의료 및 서비스 부족
+
+#### 3. 테마 분석 : 활발한 야외 활동
+![데이터사진14](ASSET/image/14.png)
+* 종로구, 중구, 서초구
+* 공원 면적 상위권
+* 주의 요소 : 의료 인프라 낮음, 소음 및 미세먼지 농도 주의
+
+#### 4. 테마 분석 : 문화 · 여가 동행
+![데이터사진15](ASSET/image/15.png)
+* 강남구, 마포구, 송파구
+* 반려동물 동반 시설 수 상위권
+* 주의 요소 : 유기동물 발생률 및 소음 민원 상대적 높음
+
+#### 5. 테마 분석 : 입양 · 봉사 관심
+![데이터사진16](ASSET/image/16.png)
+* 성동구, 강동구, 서대문구
+* 복지정책 · 보호소 상위권
+* 주의 요소 : 의료·미용 등 서비스 인프라 부족
 
 ---
 
 ## 5️⃣ 견종별 주거지 추천 서비스
+* 견종별 성격 분석 후 행복한 주거지 추천 서비스  
+
+### 집단 1
+![견종별1](ASSET/image/17.png)
+__집단 1 특징__
+* 소음과 낯선 환경에 매우 민감
+* 말티즈, 치와와, 포메라니안
+
+#### 집단 1 추천 지역 
+1) 펫·건강 케어
+![사진1](ASSET/image/18.png)
+* 강남구, 송파구, 서초구
+
+
+2) 펫 스트레스-프리
+![사진2](ASSET/image/19.png)
+* 강북구, 은평구, 서대문구
+
+### 집단 2
+![견종별2](ASSET/image/20.png)
+__집단 2 특징__
+* 활동적이고 운동량 많음
+* 진돗개, 골든 리트리버, 말라뮤트
+
+#### 집단 2 추천 지역
+1) 산책·놀이 중심
+![사진3](ASSET/image/21.png)
+* 종로구, 중구, 서초구
+
+
+### 집단 3
+![견종별3](ASSET/image/22.png)
+__집단 3 특징__
+* 사회적이고, 활동량 적당히 필요
+* 푸들, 시츄, 비숑 프리제
+
+#### 집단 3 추천 지역
+1) 펫·건강 케어
+![사진4](ASSET/image/23.png)
+* 송파구, 강남구, 서초구
+
+2) 문화·여가 동행
+![사진5](ASSET/image/24.png)
+* 마포구, 강남구, 송파구
+
+### 집단 4
+![견종별4](ASSET/image/25.png)
+__집단 4 특징__
+* 활동량 매우 많고, 사교적, 경계심 있음
+* 비글
+
+#### 집단 4 추천 지역
+1) 산책·놀이 중심
+![사진6](ASSET/image/26.png)
+* 종로구, 중구, 서초구
+
+2) 펫 스트레스-프리
+![사진7](ASSET/image/27.png)
+* 강북구, 은평구, 서대문구
+
+
+> 견종별 성격 출처 : (The American Kennel Club) https://www.akc.org/dog-breeds/?letter=M, (The Royal Kennel Club) https://www.thekennelclub.org.uk/search/breeds-a-to-z/   
+견조별 사진 : 구글 이미지
+
 =======
